@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>I'm Sorry ❤️</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffd3b6);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+overflow:hidden;
+}
+
+.card{
+
+width:90%;
+max-width:850px;
+
+padding:50px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+color:white;
+
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+text-align:center;
+
+animation:fade 1.5s;
+
+}
+
+h1{
+
+font-size:60px;
+
+font-family:'Dancing Script',cursive;
+
+margin-bottom:30px;
+
+}
+
+#typing{
+
+font-size:20px;
+
+line-height:2;
+
+white-space:pre-wrap;
+
+min-height:350px;
+
+}
+
+button{
+
+margin-top:40px;
+
+padding:18px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+background:white;
+
+color:#ff4d88;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>To My Love ❤️</h1>
+
+<p id="typing"></p>
+
+<button onclick="window.location.href='memories.html'">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+<script>
+
+const text=`Dear Sabina,
+
+If you're reading this, thank you for giving these few minutes to my heart.
+
+I know things between us aren't the same anymore.
+
+Somewhere between my overthinking, my constant doubts, and asking for things I shouldn't have kept asking for, I slowly started hurting the person I love the most.
+
+I wasn't trying to make you feel uncomfortable...
+
+I was just too scared of losing you.
+
+But fear isn't an excuse.
+
+I should have trusted you more.
+
+I should have respected your feelings more.
+
+I know there were misunderstandings from both sides.
+
+I know we both made mistakes.
+
+This isn't a website to prove who was right or wrong.
+
+This is simply me accepting my part.
+
+Because if I truly love you...
+
+Then I should also have the courage to admit where I failed.
+
+I don't expect everything to become normal today.
+
+I only hope you'll continue reading...
+
+Because our story deserves at least that.
+
+❤️`;
+
+let i=0;
+
+function type(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(type,25);
+
+}
+
+}
+
+type();
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
